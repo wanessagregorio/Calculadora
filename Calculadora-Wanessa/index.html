@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Aula de javascript</title>
+        <link rel="stylesheet" href="calc.css"/>
+        <script type="text/javascript" src="calc.js"></script>        
+        
+        <style>
+            body{
+            color:white;
+            margin-top: 10%;
+            text-align: center;
+            background-color: black;
+            justify-content: center;
+        }
+        .calculadora{
+            top: 20%;
+            display: flex;
+            justify-content: center;
+        }
+
+        </style>
+    </head>
+    <body>
+      
+
+        <h1>Calculadora da Wanessa</h1>
+        
+        <input type="text" value="0" id="visor"/>        
+        <input type="hidden" id="op"/>        
+        <input type="hidden" id="firstvalue"/>        
+
+        <div class="calculadora">
+
+        <table>
+            <tr>
+                <td><button value="7" onclick="btn(this.value);">7</button></td>
+                <td><button value="8" onclick="btn(this.value)">8</button></td>
+                <td><button value="9" onclick="btn(this.value)">9</button></td>
+                <td><button value="/" onclick="btnop(this.value)">/</button></td>
+                <td><button value="c" onclick="btnc(this.value)">C</button></td>
+            </tr>
+            <tr>
+                <td><button value="4" onclick="btn(this.value);">4</button></td>
+                <td><button value="5" onclick="btn(this.value);">5</button></td>
+                <td><button value="6" onclick="btn(this.value);">6</button></td>
+                <td><button value="*" onclick="btnop(this.value);">*</button></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><button value="1" onclick="btn(this.value);">1</button></td>
+                <td><button value="2" onclick="btn(this.value);">2</button></td>
+                <td><button value="3" onclick="btn(this.value);">3</button></td>
+                <td><button value="-" onclick="btnop(this.value);">-</button></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><button value="0" onclick="btn(this.value);">0</button></td>
+                <td> </td>
+                <td><button value="+" onclick="btnop(this.value);">+</button></td>
+                <td><button class="igual" value="=" onclick="btnig()">=</button></td>
+            </tr>            
+        </table>
+        </div>
+    </body>
+</html>
